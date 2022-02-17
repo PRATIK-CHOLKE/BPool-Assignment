@@ -8,7 +8,7 @@ const MockData = () => {
     btnUpload.addEventListener("click", () => {
         const formData = new FormData();
 
-        formData.append("file", file);
+        formData.append("pdfFile", file);
 
         fetch("/extract-text", {
             method: "post",
